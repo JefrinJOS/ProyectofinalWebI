@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- Sitio Web UNAH-->
+<html>
+    <head>
+        <title>Sitio Web UNAH</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sitio Web de Ejemplo de Maquetación">
+        <meta name="author" content="Jefrin Jose Orellana Sanchez">
+        <meta name="keywords" content="html,css">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+             *{
+                margin-top: 0px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 3px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .logo{
+                display:flex;
+                flex-direction: row;
+            }
+
+            .logo div{
+                width:100%;
+                opacity:0.9;
+                margin:10px;
+                text-align:center;
+                font-size: 30px;
+            }
+
+            .logo div img{
+                max-width: 30%;
+                height: auto;
+
+               
+            }
+            
+            .logo2{
+                display:flex;
+                flex-direction: row;
+
+            
+            }
+
+            .logo2 div{
+                width:80%;
+                opacity:0.9;
+                margin:10px;
+                text-align:right;
+                font-size: 50px;
+            }
+
+
+            .logo2 div img{
+                max-width: 45%;
+                height: auto;
+
+                margin-top: -2022px;
+                margin-left: 2px;
+                margin-right: 895px;
+                margin-bottom: 5px;
+            }
+
+
+             
+            .logo3{
+                display:flex;
+                flex-direction: row;
+
+            
+            }
+
+            .logo3 div{
+                width:80%;
+                opacity:0.9;
+                margin:10px;
+                text-align:right;
+                font-size: 50px;
+            }
+
+
+            .logo3 div img{
+                max-width: 52.5%;
+                height: auto;
+
+                margin-top: -2222px;
+                margin-left: 2px;
+                margin-right: -315px;
+                margin-bottom: 85px;
+            }
+            h4{
+                margin-left: 180px;
+                font-size: 40px;
+            
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            .menu{
+                display: flex;
+                flex-direction: row;
+                position: sticky;
+                top: 0px;
+            }
+
+            .menu div{
+                width: 100%;
+                opacity: 0.9;
+                text-align: center;
+                font-size: 30px;
+                border-radius: 8px;
+                padding: 5px;
+                color:white;
+                background-color: rgb(10, 250, 150);
+                line-height: 70px;
+                position: sticky;
+                top: 0px;
+            }
+
+            .menu div a{
+                color: rgb(241, 52, 4);
+                font-size: 25px;
+                text-decoration: none;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+
+            .menu div a:hover{
+                background-color: rgb(211, 193, 193);
+                font-size: 28px;
+                color: white;
+            }
+
+            .banner{
+                display: flex;
+                flex-direction: row;
+              
+                
+            }
+
+            .banner div{
+                background-color: rgb(252, 208, 208);
+                width: 100%;
+                border-radius: 8px;
+                
+                
+            }
+
+            .banner div img{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 35%;
+                margin-right: 5px;
+                max-width: 99%;
+                height: auto;
+                border-radius: 10%;
+                
+            }
+
+            .banner div img:hover{
+                
+                box-shadow: 0 0 2px 4px white;
+                
+            
+            }
+
+            .informacioncorp{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .informacioncorp div{
+                width: 100%;
+                background-color: dodgerblue;
+                color: white;
+                
+                border-radius: 8px;
+            }
+
+            .informacioncorp div p{
+                margin: 10px;
+                font-size: 25px;
+                text-align: justify;
+            }
+
+            .vision{
+                display: flex;
+                flex-direction: row;
+                background-color: dodgerblue;
+                border-radius: 8px;
+                flex-wrap: wrap;
+            }
+
+            .vision div{
+                background-color: dodgerblue;
+                width: 100%;
+                border: 1px solid white;
+                line-height: 70px;
+                border-radius: 8px;
+                flex: 1 200px;
+            }
+
+            .vision div p{
+                font-size: 25px;
+                color: white;
+                text-align: justify;
+                line-height: 30px;
+            }
+
+            .vision div h2{
+                color: yellow;
+                text-align: center;
+            }
+
+            .plan{
+                display: flex;
+                flex-direction: row;
+                background-color: dodgerblue;
+                border-radius: 8px;
+                flex-wrap: wrap;
+            }
+
+            .plan div{
+                background-color: dodgerblue;
+                width: 100%;
+                border: 1px solid white;
+                line-height: 70px;
+                border-radius: 8px;
+                flex: 1 200px;
+            }
+
+            .plan div p{
+                font-size: 25px;
+                color: white;
+                text-align: justify;
+                line-height: 30px;
+            }
+
+            .plan div h2{
+                color: yellow;
+                text-align: center;
+            }
+
+            .galeriadefoto{
+                display: flex;
+                flex-direction: row;
+                background-color: dodgerblue;
+                border-radius: 8px;
+            }
+
+            .galeriadefoto div{
+                margin-left: 8px;
+                margin-top: 15px;
+                margin-right: 15px;
+                width: 100%;
+            }
+
+            .galeriadefoto div img{
+                max-width: 98%;
+                height: auto;
+                border: 1px solid white;
+                border-radius: 8px;
+            }
+
+            .galeriadefoto div img:hover{
+                box-shadow: 0 0 2px 4px white;
+            }
+
+            .contactenos{
+                display: flex;
+                flex-direction: row;
+                border:1px solid white;
+            }
+
+            .contactenos div{
+                width: 100%;
+                background-color: dodgerblue;
+                color: white;
+                border-radius: 8px;
+                border: 1px solid white;
+                padding-left: 5px;
+                padding-right: 15px;
+                padding-top: 4px;
+                text-align: center;
+                line-height: 70px;
+            }
+
+            .contactenos div frame{
+        
+                border:3px solid white
+            }
+            .piedepagina{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .piedepagina div{
+                width: 100%;
+                background-color: rgb(7, 52, 253);
+                color: white;
+                border-radius: 8px;
+                border: 1px solid white;
+                line-height: 70px;
+            }
+
+            .piedepagina div p{
+                margin: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h2{
+                margin-left: 5px;
+            }
+            
+
+            h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #0c0c0c;
+  text-align: center;
+}
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #fcf5f5;   
+}
+
+
+.contact_form{  
+  width: 500px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #e49898; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #15e449; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #15e449; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #f78606; 
+  border-color: #0a0a0a; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+          
+
+        </style>
+    </head>
+    <body>
+
+        
+
+        <div class="logo">
+            <div>
+                <img src="https://www.unam.mx/sites/all/themes/unam/apple_icon.png">
+            </div>
+        </div>
+        
+        <div class="logo2">
+            <div>
+                <img src="https://www.dgcs.unam.mx/boletin/bdboletin/multimedia/WAV210423/366(8).jpg">
+            </div>
+        </div>
+        <div class="logo3">
+            <div>
+                <img src="https://i0.wp.com/unitedkingdom.unam.mx/wp-content/uploads/2021/02/what-is-unam-uk-que-es-reino-unido.jpg?resize=840%2C450&ssl=1">
+            </div>
+        </div>
+
+        <h4>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</h4>
+
+        <div class="menu">
+            <div>
+                <a href="index.html">INICIO</a>
+                <a href="inform_corporativa.html">INFORMACIÓN CORPORATIVA</a>
+                <a href="plan_de_estudio.html">PLAN DE ESTUDIO</a>
+                <a href="galeria_de_imagenes.html">GALERÍA DE IMÁGENES</a>
+                <a href="contactenos.html">CONTÁCTENOS</a>
+            </div>
+        </div>
+        
+        
+        
+        <div class="banner">
+            <div>
+                <img src="https://www.ingenieria.unam.mx/images/logos/logo_1.png">
+            
+            </div>
+            
+        </div>
+
+        <article><p style="text-align: center;font-size: 50px;">
+            CONTÁCTENOS
+        </p></article>
+
+        <div class="contact_form">
+
+            <div class="formulario">     
+            
+            
+                    <h1>SI ESTÁS INTERESADO EN CONTACTARTE</h1>
+               
+            
+                <h3>Escríbenos y nos pondremos en contacto lo mas pronto posible con tigo</h3>
+        
+        
+                  <form action="submeter-formulario.php" method="post">       
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombres
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Apellidos
+                              <span class="obligatorio">*</span>
+                            </label>
+                              <input type="text" name="introducir_apellido" id="apellido" required="obligatorio" placeholder="Escribe tus apellidos">
+                          </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                      
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>Toda la información solicitada, es requerida.
+                        </p>          
+                    
+                  </form>
+            </div>  
+          </div>
+        
+        </body>
+        </html>
+        
+
+
+            <div class="piedepagina">
+                <div>
+                    <p>
+                        COPYRIGHT 2021, DISEÑADO POR JEFRIN SANCHEZ
+                    </p>
+                </div>
+            </div>   
+    </body>
+</html>
